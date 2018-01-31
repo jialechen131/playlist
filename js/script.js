@@ -41,18 +41,25 @@ var myPlayList = [
 		"artist":"Justin Bieber",
 		"mp3-url":"https://open.spotify.com/track/09CtPGIpYB4BrO8qb1RGsF",
 		"image-url":"http://assets-s3.usmagazine.com/uploads/assets/articles/93827-justin-biebers-sorry-choreographer-spills-video-style-secrets-parris-goebel/1445638548_justin-bieber-sorry-dancers-zoom.jpg",
-	}
+	},
+    {
+        "title":"",
+        "artist":"",
+        "mp3-url":"",
+        "image-url":""
+    }
+	
 
-]
+];
 
 
 
 // DOCUMENT READY FUNCTION
 $( document ).ready(function() {
-  
-
-
-
+  $('body').append("<p>Title: " + mySong.title + "</p>");
+  $('body').append("<img src= " + mySong["image-url"] + ">");
+  $('body').append("<a href='" + mySong["mp3-url"] + "'>play</a>");                
+                    
 });
 
 function displayList(){
