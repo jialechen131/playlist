@@ -16,12 +16,12 @@
 //****************** SERIOUSLY TEST USING console.log()!!! ******************
 
 // Songs
-var mySong = {
-	"title":"24K Magic",
-	"artist":"Bruno Mars",
-	"mp3-url":"https://open.spotify.com/track/6b8Be6ljOzmkOmFslEb23P",
-	"image-url":"https://images-na.ssl-images-amazon.com/images/I/71Gr9aCHQfL._SY355_.jpg",
-}
+// var mySong = {
+// 	"title":"24K Magic",
+// 	"artist":"Bruno Mars",
+// 	"mp3-url":"https://open.spotify.com/track/6b8Be6ljOzmkOmFslEb23P",
+// 	"image-url":"https://images-na.ssl-images-amazon.com/images/I/71Gr9aCHQfL._SY355_.jpg",
+// }
 
 var myPlayList = [
 	{
@@ -56,10 +56,13 @@ var myPlayList = [
 
 // DOCUMENT READY FUNCTION
 $( document ).ready(function() {
-  $('body').append("<p>Title: " + mySong.title + "</p>");
-  $('body').append("<img src= " + mySong["image-url"] + ">");
-  $('body').append("<a href='" + mySong["mp3-url"] + "'>play</a>");                
-                    
+  $('body').append("<p>Title: " + myPlayList[0].title + "</p>");
+  $('body').append("<p>Artist:" + myPlayList[0].artist + "</p>");
+  $('body').append("<img src= " + myPlayList[0]["image-url"] + ">");
+  $('body').append("<a href='" +  myPlayList[0]["mp3-url"] + "'>play</a>");                
+  for (var i=0; i<myPlayList; i=4){
+  	
+  }                 
 });
 
 function displayList(){
