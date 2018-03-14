@@ -1,1 +1,12 @@
 
+
+html { 
+  background:  url(https://cdn.dribbble.com/users/57484/screenshots/2068927/speaker-gif-animation.gif) no-repeat center center fixed; 
+  background-size: cover;
+}
+
+
+img {
+	height:100px;
+	width:100px;
+}
